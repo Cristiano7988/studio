@@ -1,1 +1,1 @@
-Studio
+studio
