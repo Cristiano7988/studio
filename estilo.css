@@ -1,246 +1,309 @@
 
+
 		/* Geral */
+		html{
+			overflow-x: hidden;
+			width: 102vw;
+		}
+
+
+		body{
+			background-color: white;
+			overflow-x: hidden; 
+		}
+
+		@font-face{
+			font-family: Josefin-Light;
+			src: url(TIpografia/josefinsans/JosefinSans-Light.ttf);
+		}
+		@font-face{
+			font-family: Josefin;
+			src: url(TIpografia/josefinsans/JosefinSans-Bold.ttf);
+		}
+		@font-face{
+			font-family: MorningDew;
+			src: url(TIpografia/MorningDew/MorningDew/MorningDew.ttf);
+		}		
+		@font-face{
+			font-family: MorningDew Alt;
+			src: url(TIpografia/MorningDew/MorningDewAlt/MorningDewAlt.ttf);
+		}
+		@font-face{
+			font-family: MorningDew Swash;
+			src: url(TIpografia/MorningDew/MorningDewSwash/MorningDewSwash.ttf);
+		}
 
 		*{
 			margin: 0px;
 			text-decoration: none;
-			font-family: sans-serif;			
-		}
-		html{
-			overflow-x: hidden;
+			font-family: Josefin-Light;
+			text-align: justify;
+			color: #09202B;						
 		}
 
-		/* Cabeçalho */
+		/* CABEÇALHO */
 
 		header{
-			background-color: gray;
-			height: 350px;
+			width: 100%;
+			overflow: hidden;
 		}
 
-		#foto1{
+		#logo{
+			width:43%;
+			position: absolute;
+			left: -3vw;
+			top: -4vw;
+			z-index: 2;
+		}
+		div img{
 			width: 100%;
 		}
-
-		#crop{
-			height: 350px;
-			overflow: hidden;
-		}
-
-		#logotipo{
-			overflow: hidden;
-			width: 7%;
-			position: unset;
-		}
-
-		nav{
+		ol{
+			background-color: white;
+			padding-bottom: 1.5%;
 			text-align: right;
-			background-color: rgb(189, 233, 245);
+			position: absolute;
+			top: 22vw;
+			width: 97%;
+			opacity: 0.8;
+		}
+		ol li{
+			display: inline-block;
+			margin-bottom: 1%;
+			margin-top: 2.8%;
+			text-align: center;
+			border-bottom: 5px solid white;
+			padding: 0vw 7%;
+		}
+
+		ol li:hover{border-bottom: 5px solid #FB8D30;}	
+		#logar {
+			text-align: right;
+			padding-right: 7%;
+		}
+		a{
+			font-size: 3vh;
+		}
+
+
+		/* TEXTO */
+		div span{
+			font-family: MorningDew Swash;
+			position: relative;
+			top: -20px;
+			font-size: 5em;
+			color: #20485D;			
+		}
+		#ass_pilates	span{left: 52%;}
+		#ass_bruna 		span{left: 52%;}
+		#ass_oficina	span{left: 63%;}
+		#ass_djefri		span{left: 50%;}
+		#ass_nutri		span{left: 58%;}
+		#ass_floral		span{left: 50%;}
+		#ass_reiki 		span{left: 45%;}
+		#ass_barras		span{left: 52%;}
+		#ass_claudia	span{left: 57%;}
+		#ass_eli		span{left: 52%;}
+		#ass_sonia		span{left: 52%;}
+		#ass_cris 		span{left: 54%;}
+		#ass_kelly		span{left: 49%;}
+
+		#ass_yoga		span{left: 51%;}
+		#ass_laliita	span{left: 45%;}
+		#ass_sabrina	span{left: 45%;}
+		#ass_fabi 		span{left: 45%;}		
+
+
+		h1 span, h4 span{
+			font-family: MorningDew Swash;
+			position: relative;
+			top: -1.6vh;
+			right: -16.5em;
+			color: #20485D;
+		}
+		h1, h2, h4{
+			font-family: MorningDew Alt;
+			text-align: center;
+			font-size: 7vh;
+			letter-spacing: 3px;
+			white-space: nowrap;
+			color: #20485D;
+			display: grid;
+			}
+		h1, h2{
+			padding: 1vh;
+		}
+		h4{
 			width: 100%;
-			height: 40px;
-			padding-top: 10px;
 		}
-
-		#adm span{
-			color: gray;
-			margin: 0px;
-			font-size: 10px;
-			padding-left: 91%;
-		}
-
 
 		.delimitador{
 			margin: auto;
 			width: 70%;
 			overflow: hidden;
-			padding-top: 50px;
-		}
-
-		#logo{
-			width:50%;
-			min-width: 500px;
-			position: absolute;
-			left: -70px;
-			top: -75px;
-			z-index: 11;
-		}
-
-		ol{
-			margin-top: -150px;
-			z-index: 10;
-			position: sticky;
-			background-color: rgb(189, 233, 245);
-			opacity: 0.7;
-			padding-top: 32px;
-			padding-bottom: 32px;
-			text-align: right;
-		}
-
-		ol li{
-			display: inline-block;
-			width: 15%;
-			margin-bottom: 10px;
-			margin-top: 1%;
-			text-align: center;
-		}
-
-		a{
-			color: black;
-			font-size: 19px;
-			text-shadow: 2px 2px 5px white;
-		}
-
-
-		/* Sobre */
-
-		h2, h4{
-			text-align: center;
-			margin:1%;
-		}
-
-		#texto{
-			background-color: #B1CBDE;
-		}
-
-		#texto .delimitador{
 			height: 50%;
-			border: 5px solid white;
-			border-radius: 50px;
+			border: 2px solid #FAD488;
+			border-radius: 25px;
 			padding: 20px;
-			background-color: #CFEFF5; 
+			background-color: #FAD488;
+			box-shadow: 5px 5px 50px #20485D;
+			text-align: center;		
 		}
-
-		/* Perfil */
-
-		#perfil{
-			background-color: #B1CBDE;
-			margin: auto;
+		p{
+			font-size: 18px;
+			margin-bottom: 30px;
+			line-height: 26px;
+			font-family: Josefin-Light;
 		}
+		.texto{
+			background-color: white;	
+			padding-bottom: 10vh;
+			padding-top: 1vw;
+		}
+		ul li{line-height: 30px;}
 
+		/* FOTO */
 		.foto{
-			width:150px;
+			width:160px;
 			top: 2px;
 			position: relative;
+			left: -10px;
 		}
-
-		#figura2 {
-    		width: 160px;
-    		top: 2px;
-    		position: relative;
-    		left: -5px;
-}
-
-		.ocultar{
-			width: 0px;
-			height: 250px;
-			position: absolute;
-			left:600px;
-			top: 970px;
-			overflow: hidden;			
+		#elizafoto{
+			width: 175px;
+			top: 0px;
+			left: 0px;
 		}
-
-		p{
-			text-align: justify;
-			margin: 0px 0px 30px 0px;
-			width: 100%;
+		#crisfoto{
+			top:0px;
+			left: 0px;
+			width: 154px;
 		}
-
+		#sabrina{
+			top: 0px;
+			width: 185px;
+		}
 		.perfil{
-			background-color: lightyellow;
 			border-radius: 50%;
-			width: 150px;
+			width: 140px;
+			height: 140px;
 			float: left;
 			overflow: hidden;
 			margin-right: 30px;
-			margin-bottom: 30px; 			
+			margin-bottom: 20px; 			
 		}
 
 
-		/* Agenda */
-
-		#agenda .delimitador{
-			height: 50%;
-			overflow: visible; /* Rever overflow */
-		}
-
-		#agenda{
-			height: 50%;
-			background-color: lightyellow;
-		}
-
-		#agenda p{
-			margin: 0px;
-		}
-
-		.curriculo{
-			float: left;
-		}
-
-		/* Agenda */
-
-		table{
-			margin-top: 50px;
-		}
-
-		td, tr{
-			width: 1%;
-			height: 1%;
-			border: 1px solid black;
-			text-align: center;
-			overflow: hidden;
-			cursor: pointer;
-		}
-		td{
-			border-radius: 10px;
-		}
-
-		#t1, #t2, #t3, #t4{
-			background-color: #E8CD4A;
-			border-radius: 10%;
-			cursor: pointer;
-			padding: 4px;
-		}
-
-		main{
-			background-color: #C4BDF9;
-		}
-
-		#formulario{
-			height: 900px;
-		}
-
-		#formulario p{
-			margin: 20px 0px 20px 0px;
-		}
-
-		#ct1{
-			width:200px;
-		}
-
-		.barra{
-			height: 17px;
-			width: 0px;
-		}
-
-		#b1, #b4, #b7, #b10{background-color: lightblue;}
-		#b2, #b5, #b8, #b11{background-color: lightgreen;}
-		#b3, #b6, #b9, #b12{background-color: pink;}
-		/* Roda pé */
-
+		/* RODA PÉ */
 		footer{
-			background-color: rgb(189, 233, 245);
-			height: 250px;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			background-color: #20485D;
 			overflow: hidden;
 		}
-
+		footer section{
+			background-color: #09202B;
+			padding-left: 13%;
+		}
 		footer p{
 			margin: 0px;
+			color: #FAD488;
+			font-size: 15px;
+			line-height: 20px;
 		}
-
-		footer article{
-			margin: 20px;
-		}
-
+		#desenvolvedor{margin-top: 50px;}
 		#desenvolvedor p{
+			font-family: Josefin-Light;	
 			text-align: center;
-			font-size: 12px;
+			font-size: 13px;
+			line-height: 17px;
+			letter-spacing: 1px;
+			color: #FAD488;
 		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px){
+	#logo{
+		width: 68%;
+		z-index: 0;
+	}
+	a{
+		padding: 0vw 3vw;
+	}
+	h1,h2,h4{
+		width: 100%;
+		font-size: 3.5vh;
+		padding: 1vh 0vh;
+	}
+	div span{
+		font-size: 3em;
+	}
+	h1 span, h4 span{
+		top: -0.6vh;
+		right: -55%;
+	}
+
+	.perfil{
+		margin-left: 45px;
+	}
+	h4{
+		display: contents;
+	}
+
+	.delimitador p{
+		margin-top: 15px;
+	}
+
+	ol a{
+		font-size: 18px;
+		padding: 0vw 1vw;
+	}
+
+	ol{
+		white-space: nowrap;
+		text-align: center;
+		position: inherit;
+		padding-bottom: 0px;
+		width: 74%;
+		padding-top: 0px;
+		margin-top:10px;
+		padding-left: 4vw;
+	}
+	#adm {padding-right: 15px;font-size: 15px;}
+	p{
+		font-size: 19px;
+		line-height: 25px;
+	}
+	footer p{
+		font-size: 12px;
+		margin-left: -11px;
+		font-weight: bolder;
+	}
+	#desenvolvedor p{
+		font-size: 8px;
+		margin-left: -40px;
+		letter-spacing: 0.5px;
+	}
+}

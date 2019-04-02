@@ -1,0 +1,203 @@
+
+		/* Geral */
+
+		body{
+			background-color: #20485D;
+			min-width: 600px;
+			overflow-x: hidden;
+		}
+		@font-face{
+			font-family: Josefin;
+			src: url(TIpografia/josefinsans/JosefinSans-Bold.ttf);
+		}
+		@font-face{
+			font-family: MorningDewAlt;
+			src: url(TIpografia/MorningDew/MorningDewAlt/MorningDewAlt.ttf);
+		}		
+		*{
+			margin: 0px;
+			text-decoration: none;
+			font-family: Josefin;
+			text-align: justify;						
+		}
+		h3{
+			font-family: MorningDewAlt;
+			width: 100px;
+			float: left;
+			text-align: center;
+		}		
+		table{margin-right: 50px;}
+		td{
+			border: 1px solid #09202B;
+			text-align: center;
+			cursor: pointer;
+			border-radius: 7px;
+			padding: 5px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		/* AGENDA */
+		#agenda{
+			margin: auto;
+			width: 70%;	
+			background-color: white;
+			border-radius: 20px;
+			padding: 10px;
+			box-shadow: 5px 5px 20px gray;
+			display: table;
+			min-width: 433px;	
+		}
+		img{
+			position: absolute;
+			top: -24px;
+			width: 323px;
+			height: 225px;
+			left: -5%;
+		}
+		h1{font-family: MorningDew; text-align: center;}
+
+
+
+
+
+
+
+
+
+		/*BOTÕES*/
+		#colaborador h3{margin-left: 5%;}
+		#colaborador{
+			float: left;
+			width: 20%;
+			margin-top: 14%;
+		}
+		.t{
+			color: white;
+			background-color: #20485D;
+			cursor: pointer;
+			box-shadow: 2px 2px 5px gray;
+			width: 52%;
+			min-width: 110px;			
+		}
+		#t4{
+			background-color: white;
+			color: #09202B;		
+		}
+		#t4:hover{background-color: #FB8D30;}
+		.t:hover{background-color: #FB8D30;}
+
+
+
+
+
+
+
+
+		/*CALENDÁRIO*/
+		#calendario{
+			float: left;
+			width: 44%;
+			margin-left: 10%;
+			min-width: 330px;
+		}		
+		#volta{
+			float: left;
+			margin-left: 29%;
+		}
+		.troca{font-weight: bold;}
+		#avanca{margin-left: 7px;}		
+		#dias{background-color: #FA713A;}		
+		#calendario table{float: left;}
+		#calendario td{
+			width: 35px;
+			height: 35px;
+		}
+
+
+
+
+
+		/*HORÁRIOS*/
+		#campo h3{
+			float: none;
+			width: 270px;
+			text-align: left;
+		}		
+		#campo{
+			width: 239px;
+			float: left;
+		}
+		.hora{background-color: #FA713A;}		
+		.insere{width: 60%;}
+		#bottom{
+			float: left;
+			margin-right: 295px; 
+			margin-left: 48%;
+			margin-top: 15px;
+		}
+		/*RESPONSIVIDADE*/
+		@media only screen and (max-width: 1332px){
+			#campo h3{margin-top: 10px;}
+			#campo{padding-left: 39%;}			
+		}
+		/*Para Celular*/
+		@media only screen and (max-width: 500px) {
+			img{
+				position: absolute;
+				top: -18px;
+				width: 244px;
+				height: 170px;
+				left: -8%;
+			}
+  			.delimitador{width: 100%;}
+			#agenda{
+				position: absolute;
+				left: 0px;
+			}
+			/*BOTÕES*/
+			#colaborador{
+				width: 40%;
+				margin-left: 36%;
+				margin-top: 3%;
+			}
+			#colaborador h3{margin-left: 5%;}
+			/*CALENDÁRIO*/
+			#calendario{
+				margin-left: 18%;
+				width: 75%;	
+				margin-top: 5%;
+			}
+			#volta{margin-left: 26%;}			
+			#calendario h3{margin-left: 1%;}
+			/*HORÁRIOS*/
+			#campo{
+				padding-left: 0px; 
+				margin-left: 30%;
+				margin-top: 20px;
+			}
+
+  			#bottom{
+  				margin-top: 20px;
+  				margin-left: 44%;
+  			}
+		}		

@@ -1,246 +1,226 @@
 
 		/* Geral */
 
+		body{
+			background-color: #20485D;
+			/*min-width: 600px;*/
+			overflow-x: hidden;
+		}
+		@font-face{
+			font-family: Josefin;
+			src: url(TIpografia/josefinsans/JosefinSans-Bold.ttf);
+		}
+		@font-face{
+			font-family: MorningDew;
+			src: url(TIpografia/MorningDew/MorningDew/MorningDew.ttf);
+		}		
+		@font-face{
+			font-family: MorningDew Alt;
+			src: url(TIpografia/MorningDew/MorningDewAlt/MorningDewAlt.ttf);
+		}
+		@font-face{
+			font-family: MorningDew Swash;
+			src: url(TIpografia/MorningDew/MorningDewSwash/MorningDewSwash.ttf);
+		}
+		@font-face{
+			font-family: MorningDew Alt;
+			src: url(TIpografia/MorningDew/MorningDewAlt/MorningDewAlt.ttf);
+		}		
+
+
 		*{
 			margin: 0px;
 			text-decoration: none;
-			font-family: sans-serif;
+			font-family: Josefin;
 			text-align: justify;						
-		}	
-
-		/* Cabeçalho */
-
-		#logo{
-			width:50%;
-			min-width: 500px;
-			position: absolute;
-			left: -70px;
-			top: -75px;
-			z-index: 11;
 		}
-
-		ol{
-			margin-top: -150px;
-			z-index: 10;
-			position: sticky;
-			background-color: rgb(189, 233, 245, 0.7);
-			padding-top: 32px;
-			padding-bottom: 32px;
-			text-align: right;
+		#menu{
+			position: fixed;
+			top: 0px;
+			right: 0px;
+			padding: 5px;
+			color: rgb(250, 212, 136);		
 		}
-
-		ol li{
-			display: inline-block;
-			width: 15%;
-			margin-bottom: 10px;
-			margin-top: 1%;
-			text-align: center;
-			border-bottom: 5px solid rgb(189, 233, 245, 0);
-		}
-
-		a{
-			color: black;
-			font-size: 19px;
-			text-shadow: 2px 2px 5px white;
-		}
-
-		ol li:hover{
-			border-bottom: 5px solid pink;
+		#menu a{
+			text-decoration: none;
+			color: rgb(250, 212, 136);			
 		}		
-
-
-		#adm span{
-			color: gray;
-			margin: 0px;
-			font-size: 10px;
-			padding-left: 91%;
-		}
-
-
-		/* Texto */
-
-
-		h2, h4{
+		h3{
+			font-family: Josefin;
+			width: 100px;
+			float: left;
 			text-align: center;
-			padding:3%;
-		}
-
-		#titulobugado{
-			padding-right: 160px;
-		}
-
-		p{
-			margin-bottom: 30px;
-			line-height: 30px;
-		}
-
-		.delimitador{
-			margin: auto;
-			width: 70%;
-			overflow: hidden;
-			height: 50%;
-			border: 2px solid white;
-			border-radius: 50px;
-			padding: 20px;
-			background-color: #CFEFF5;
-			box-shadow: 5px 5px 50px gray; 		
-		}	
-
-		.texto{
-			background-color: #B1CBDE;
-			padding-bottom: 50px;
-		}
-
-		ul li{
-			line-height: 30px;
-		}
-
-		/* Foto */
-
-		.foto{
-			width:160px;
-			top: 2px;
-			position: relative;
-			left: -10px;
-		}
-
-		.perfil{
-			border-radius: 50%;
-			width: 140px;
-			height: 140px;
-			float: left;
-			overflow: hidden;
-			margin-right: 30px;
-			margin-bottom: 20px; 			
-		}
-
-		/* AGENDA */
-
-		/*Colaboradores*/
-		#ti, #tii, #tiii{
-			background-color: #CFEFF5;
-			box-shadow: 0px 0px 0px transparent;
-			cursor: unset;
-		}
-		/*Meses*/
-		span{
-			margin-right: 10px;
-			cursor: pointer; 
-		}
-
-		/*Tabela*/
-		#calendario{
-			float: left;
-			width: 400px;
-		}
-		/*Primeira Linha*/
-		#dias{
-			background-color: pink;
-		}
-		/*Linhas*/
-		tr:hover{
-			background-color: white;
-		}
-
-		.t{
-			background-color: lightblue;
-			border-radius: 7px;
-			cursor: pointer;
-			margin-bottom: 10px;
-			margin-right: 0%;
-			box-shadow: 2px 2px 5px gray;
-			width: 10%;
-			border: 0px;
-			padding: 2px;
-		}
-		
-		.t:hover{
-			background-color: white;
 		}		
-		/*Tabelas*/
-		table{
-			margin-right: 50px;
-		}
-
+		table{margin-right: 50px;}
 		td{
-			border: 1px solid black;
+			border: 1px solid #09202B;
 			text-align: center;
 			cursor: pointer;
 			border-radius: 7px;
 			padding: 5px;
-
 		}
-		/*Tabela Calendário*/
+
+		/* AGENDA */
+		.tem{
+			width: 5px;
+			height: 5px;
+			background: orange;
+			border-radius: 50%;
+		}
+		#agenda{
+			margin: auto;
+			width: 70%;	
+			background-color: white;
+			border-radius: 20px;
+			padding: 10px;
+			box-shadow: 5px 5px 20px gray;
+			display: table;
+			min-width: 423px;	
+		}
+		img{
+			position: absolute;
+			top: -24px;
+			width: 323px;
+			height: 225px;
+			left: -5%;
+		}
+		h1{
+			font-family: MorningDew Alt;
+			text-align: center;
+			letter-spacing: 3px;
+			font-size: 60px;
+			padding-left: 36%;
+			width:300px;
+		}
+		h1 span{
+			font-family: MorningDew Swash;
+			position: relative;
+			top: 10px;
+			left: -15%;
+		}
+
+		/*BOTÕES*/
+		#colaborador h3{margin-left: 5%;}
+		#colaborador{
+			float: left;
+			width: 20%;
+			margin-top: 13%;
+		}
+		.t{
+			font-family: Josefin;
+			color: white;
+			background-color: #20485D;
+			cursor: pointer;
+			box-shadow: 2px 2px 5px gray;
+			width: 52%;
+			min-width: 110px;			
+		}
+		#t4{
+			background-color: white;
+			color: #09202B;		
+		}
+		#t4:hover{background-color: #FB8D30;}
+		.t:hover{background-color: #FB8D30;}
+
+
+
+
+
+
+
+
+		/*CALENDÁRIO*/
+		#calendario{
+			float: left;
+			width: 44%;
+			margin-left: 10%;
+			min-width: 330px;
+		}		
 		#volta{
 			float: left;
+			margin-left: 29%;
 		}
-		h3{
-			width: 100px;
-			float: left;
-		}
-
-		#calendario table{
-			float: left;
-		}
-
+		.troca{font-weight: bold; cursor: pointer;}
+		#avanca{margin-left: 7px;}		
+		#dias{background-color: #FA713A;}		
+		#calendario table{float: left;}
 		#calendario td{
 			width: 35px;
-		}
-		#calendario td{
 			height: 35px;
 		}
 
-		/*Tabela dia*/
+
+
+
+
+		/*HORÁRIOS*/
+		#campo h3{
+			float: none;
+			width: 270px;
+			text-align: left;
+		}		
 		#campo{
-			height: 400px;
+			width: 239px;
+			float: left;
 		}
-		.insere{
-			width: 60%;
+		.hora{background-color: #FA713A;}		
+		.insere{width: 60%;}
+		#bottom{
+			float: left;
+			margin-right: 295px; 
+			margin-left: 48%;
+			margin-top: 15px;
 		}
-		.hora{
-			background-color: pink;
+		/*RESPONSIVIDADE*/
+		@media only screen and (max-width: 1332px){
+			h1{ padding-left: 29%;}
+			#colaborador{margin-top: 14%;}
+			#campo h3{margin-top: 10px;}
+			#campo{padding-left: 39%;}			
 		}
+		/*Para Celular*/
+		@media only screen and (max-width: 600px) {
+			img{
+				position: absolute;
+				top: -10px;
+				width: 130px;
+				height: 100px;
+				left: -5%;
+			}
+  			.delimitador{width: 100%;}
+			#agenda{
+				position: absolute;
+				left: 0px;
+				width: 97%;
+				border-radius: 0px;
+			}
+			h1{
+				padding-left: 16%;
+			}
+			/*BOTÕES*/
+			#colaborador{
+				width: 40%;
+				margin-left: 21%;
+				margin-top: 3%;
+			}
+			#colaborador h3{margin-left: 5%;}
+			/*CALENDÁRIO*/
+			#calendario{
+				margin-left: -1%;
+				width: 85%;	
+				margin-top: 5%;
+			}
+			#volta{margin-left: 26%;}			
+			#calendario h3{margin-left: 1%;}
+			/*HORÁRIOS*/
+			#campo{
+				padding-left: 0px; 
+				margin-left: 20%;
+				margin-top: 20px;
+			}
 
-
-
-
-		/* ESTATÍSTICAS */
-
-
-
-		#estatisticas p{
-			margin: 0px;
-		}
-
-		.barra{
-			height: 17px;
-			width: 0px;
-		}
-
-		#b1, #b4, #b7, #b10{background-color: lightblue;}
-		#b2, #b5, #b8, #b11{background-color: lightgreen;}
-		#b3, #b6, #b9, #b12{background-color: pink;}
-
-
-		/* Roda pé */
-
-		footer{
-			padding-top: 25px;
-			padding-bottom: 25px;
-			background-color: rgb(189, 233, 245);
-			overflow: hidden;
-		}
-
-		footer p{
-			margin: 0px;
-		}
-
-
-		#desenvolvedor{
-			margin-top: 50px;
-		}
-		#desenvolvedor p{
-			text-align: center;
-			font-size: 12px;
-			line-height: 15px;
-		}
+  			#bottom{
+  				margin-top: 20px;
+  				margin-left: 30%;
+  			}
+		}		
